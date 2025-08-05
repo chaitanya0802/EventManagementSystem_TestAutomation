@@ -1,0 +1,394 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 05 13:02:53 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69487 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.tearDownClass()'><b>tearDownClass</b><br>Test class: runners.TestRunner</td>
+<td><div><pre>java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @4f47d241
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
+	at com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessible(UnsafeReflectionAccessor.java:44)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:159)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:56)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
+	at com.google.gson.Gson.toJson(Gson.java:704)
+	at com.google.gson.Gson.toJson(Gson.java:683)
+	at com.google.gson.Gson.toJson(Gson.java:658)
+	at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
+	at com.aventstack.extentreports.reporter.JsonFormatter.access$000(JsonFormatter.java:17)
+	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
+	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+	at com.aventstack.extentreports.service.ExtentService.flush(ExtentService.java:47)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:301)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:63)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:137)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:134)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:118)
+	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:105)
+	at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1132118748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1132118748'><pre>java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @4f47d241
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
+	at com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessible(UnsafeReflectionAccessor.java:44)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:159)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:56)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
+	at com.google.gson.Gson.toJson(Gson.java:704)
+	at com.google.gson.Gson.toJson(Gson.java:683)
+	at com.google.gson.Gson.toJson(Gson.java:658)
+	at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
+	at com.aventstack.extentreports.reporter.JsonFormatter.access$000(JsonFormatter.java:17)
+	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
+	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+	at com.aventstack.extentreports.service.ExtentService.flush(ExtentService.java:47)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:301)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:63)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:137)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:134)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:118)
+	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:105)
+	at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit booking form with invalid phone number", "Event Booking Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Phone Number] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_phone_number_should_be_shown(BookingTest.java:124)
+	at ✽.validation error for invalid phone number should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace88760063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace88760063'><pre>java.lang.AssertionError: expected [Invalid Phone Number] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_phone_number_should_be_shown(BookingTest.java:124)
+	at ✽.validation error for invalid phone number should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:35)
+</pre></div></td>
+<td>6</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit booking form with zero guests", "Event Booking Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Guests Cannot be Zero] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_guests_should_be_shown(BookingTest.java:110)
+	at ✽.validation error for 0 guests should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace581031803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace581031803'><pre>java.lang.AssertionError: expected [Guests Cannot be Zero] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_guests_should_be_shown(BookingTest.java:110)
+	at ✽.validation error for 0 guests should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:29)
+</pre></div></td>
+<td>6</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit booking form with invalid email", "Event Booking Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Email Id] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_email_id_should_be_shown(BookingTest.java:95)
+	at ✽.validation error for invalid email id should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1147105139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1147105139'><pre>java.lang.AssertionError: expected [Invalid Email Id] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_email_id_should_be_shown(BookingTest.java:95)
+	at ✽.validation error for invalid email id should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:23)
+</pre></div></td>
+<td>6</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit booking form with invalid pincode", "Event Booking Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Pincode] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_pincode_should_be_shown(BookingTest.java:138)
+	at ✽.validation error for invalid pincode should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace774278169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace774278169'><pre>java.lang.AssertionError: expected [Invalid Pincode] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_pincode_should_be_shown(BookingTest.java:138)
+	at ✽.validation error for invalid pincode should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:41)
+</pre></div></td>
+<td>6</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit Contact Us form with invalid email", "Contact Us Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Email] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.ContactTest.message_for_invalid_email_should_be_shown(ContactTest.java:58)
+	at ✽.message for invalid email should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/contact.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace24919603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24919603'><pre>java.lang.AssertionError: expected [Invalid Email] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.ContactTest.message_for_invalid_email_should_be_shown(ContactTest.java:58)
+	at ✽.message for invalid email should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/contact.feature:17)
+</pre></div></td>
+<td>5</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit booking form with missing first name", "Event Booking Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit Contact Us form with empty name", "Contact Us Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Book the event with all valid details", "Event Booking Functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get status if message is sent successfully", "Contact Us Functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestRunner@23348b5d</td></tr>
+</table><p>
+</body>
+</html>
