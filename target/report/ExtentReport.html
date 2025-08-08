@@ -1,0 +1,925 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 8, 2025 01:28:44 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Book the event with all valid details</p>
+            <p class="text-sm">
+              <span>1:28:45 pm</span> / <span>00:00:36:806</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Book the event with all valid details</h5>
+<span class='badge badge-success'>08.08.2025 1:28:45 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:29:22 pm</span>
+<span class='badge badge-default'>00:00:36:806</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:28:48 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:15 pm</td>
+        <td>
+          stepDefinations.BookingTest.launched_the_browser_and_opened_the_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:18 pm</td>
+        <td>
+          stepDefinations.BookingTest.i_enter_the_all_valid_details()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:18 pm</td>
+        <td>
+          stepDefinations.BookingTest.click_on_book_now_button()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:19 pm</td>
+        <td>
+          stepDefinations.BookingTest.i_see_confirmation_message_with_details()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:22 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit booking form with missing first name</p>
+            <p class="text-sm">
+              <span>1:29:22 pm</span> / <span>00:00:08:622</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Submit booking form with missing first name</h5>
+<span class='badge badge-success'>08.08.2025 1:29:22 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:29:31 pm</span>
+<span class='badge badge-default'>00:00:08:622</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:22 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:25 pm</td>
+        <td>
+          stepDefinations.BookingTest.launched_the_browser_and_opened_the_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:27 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_fills_all_fields_except_first_name()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:27 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_clicks_book_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:28 pm</td>
+        <td>
+          stepDefinations.BookingTest.validation_error_of_required_should_be_shown()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:31 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit booking form with invalid email</p>
+            <p class="text-sm">
+              <span>1:29:31 pm</span> / <span>00:00:07:866</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Submit booking form with invalid email</h5>
+<span class='badge badge-success'>08.08.2025 1:29:31 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:29:39 pm</span>
+<span class='badge badge-default'>00:00:07:866</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:31 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:33 pm</td>
+        <td>
+          stepDefinations.BookingTest.launched_the_browser_and_opened_the_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:35 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_enters_all_correct_details_but_invalid_booking_email()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:35 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_clicks_book_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:35 pm</td>
+        <td>
+          expected [Invalid Email Id] but found []
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:39 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:39 pm</td>
+        <td>
+          Scenario failed: expected [Invalid Email Id] but found []
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit booking form with zero guests</p>
+            <p class="text-sm">
+              <span>1:29:39 pm</span> / <span>00:00:08:212</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Submit booking form with zero guests</h5>
+<span class='badge badge-success'>08.08.2025 1:29:39 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:29:47 pm</span>
+<span class='badge badge-default'>00:00:08:212</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:39 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:41 pm</td>
+        <td>
+          stepDefinations.BookingTest.launched_the_browser_and_opened_the_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:43 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_enters_all_correct_details_but_zero_guests()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:43 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_clicks_book_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:44 pm</td>
+        <td>
+          expected [Guests Cannot be Zero] but found []
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:47 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:47 pm</td>
+        <td>
+          Scenario failed: expected [Guests Cannot be Zero] but found []
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit booking form with invalid phone number</p>
+            <p class="text-sm">
+              <span>1:29:47 pm</span> / <span>00:00:08:151</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Submit booking form with invalid phone number</h5>
+<span class='badge badge-success'>08.08.2025 1:29:47 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:29:55 pm</span>
+<span class='badge badge-default'>00:00:08:151</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:47 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:49 pm</td>
+        <td>
+          stepDefinations.BookingTest.launched_the_browser_and_opened_the_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:51 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_enters_all_correct_details_but_invalid_phone_number()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:51 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_clicks_book_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:52 pm</td>
+        <td>
+          expected [Invalid Phone Number] but found []
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:55 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:55 pm</td>
+        <td>
+          Scenario failed: expected [Invalid Phone Number] but found []
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit booking form with invalid pincode</p>
+            <p class="text-sm">
+              <span>1:29:55 pm</span> / <span>00:00:08:096</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Submit booking form with invalid pincode</h5>
+<span class='badge badge-success'>08.08.2025 1:29:55 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:30:03 pm</span>
+<span class='badge badge-default'>00:00:08:096</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:55 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:57 pm</td>
+        <td>
+          stepDefinations.BookingTest.launched_the_browser_and_opened_the_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:59 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_enters_all_correct_details_but_invalid_pincode()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:00 pm</td>
+        <td>
+          stepDefinations.BookingTest.user_clicks_book_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:00 pm</td>
+        <td>
+          expected [Invalid Pincode] but found []
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:03 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:03 pm</td>
+        <td>
+          Scenario failed: expected [Invalid Pincode] but found []
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit Contact Us form with empty name</p>
+            <p class="text-sm">
+              <span>1:30:03 pm</span> / <span>00:00:06:179</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Submit Contact Us form with empty name</h5>
+<span class='badge badge-success'>08.08.2025 1:30:03 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:30:09 pm</span>
+<span class='badge badge-default'>00:00:06:179</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:03 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:05 pm</td>
+        <td>
+          stepDefinations.ContactTest.launched_the_browser_and_opened_the_web_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:06 pm</td>
+        <td>
+          stepDefinations.ContactTest.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:06 pm</td>
+        <td>
+          stepDefinations.ContactTest.user_clicks_send_message_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:06 pm</td>
+        <td>
+          stepDefinations.ContactTest.required_message_for_name_should_be_shown()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:09 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="59"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Submit Contact Us form with invalid email</p>
+            <p class="text-sm">
+              <span>1:30:09 pm</span> / <span>00:00:06:678</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Submit Contact Us form with invalid email</h5>
+<span class='badge badge-success'>08.08.2025 1:30:09 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:30:16 pm</span>
+<span class='badge badge-default'>00:00:06:678</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:09 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:11 pm</td>
+        <td>
+          stepDefinations.ContactTest.launched_the_browser_and_opened_the_web_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:12 pm</td>
+        <td>
+          stepDefinations.ContactTest.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:12 pm</td>
+        <td>
+          stepDefinations.ContactTest.user_clicks_send_message_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:13 pm</td>
+        <td>
+          expected [Invalid Email] but found []
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Scenario failed: expected [Invalid Email] but found []
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="67"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Get status if message is sent successfully</p>
+            <p class="text-sm">
+              <span>1:30:16 pm</span> / <span>00:00:10:444</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Get status if message is sent successfully</h5>
+<span class='badge badge-success'>08.08.2025 1:30:16 pm</span>
+<span class='badge badge-danger'>08.08.2025 1:30:27 pm</span>
+<span class='badge badge-default'>00:00:10:444</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          hooks.Hooks.setUp()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          stepDefinations.ContactTest.launched_the_browser_and_opened_the_web_application()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:19 pm</td>
+        <td>
+          stepDefinations.ContactTest.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:19 pm</td>
+        <td>
+          stepDefinations.ContactTest.user_clicks_send_message_now()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          stepDefinations.ContactTest.status_of_sent_message_should_be_shown()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:27 pm</td>
+        <td>
+          hooks.Hooks.afterScenario(io.cucumber.java.Scenario)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 8, 2025 01:28:44 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 8, 2025 01:30:27 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='44%'>
+<b>4</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='55%'><b>5</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='83%'><b>49</b> events passed</small></div>
+<div>
+<small data-tooltip='16%'><b>10</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Book the event with all valid details":36.806,"Submit booking form with missing first name":8.622,"Submit booking form with invalid email":7.866,"Submit booking form with zero guests":8.212,"Submit booking form with invalid phone number":8.151,"Submit booking form with invalid pincode":8.096,"Submit Contact Us form with empty name":6.179,"Submit Contact Us form with invalid email":6.678,"Get status if message is sent successfully":10.444
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 5,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 49,
+failEvents: 10,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

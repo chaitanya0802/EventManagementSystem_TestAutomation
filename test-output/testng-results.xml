@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-05T13:02:53 IST" name="Default suite" finished-at="2025-08-05T13:04:03 IST" duration-ms="69487">
+  <suite started-at="2025-08-08T13:22:25 IST" name="Default suite" finished-at="2025-08-08T13:23:43 IST" duration-ms="78076">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-05T13:02:53 IST" name="Default test" finished-at="2025-08-05T13:04:03 IST" duration-ms="69487">
-      <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:02:53 IST" name="setUpClass" finished-at="2025-08-05T13:02:54 IST" duration-ms="765" status="PASS">
+    <test started-at="2025-08-08T13:22:25 IST" name="Default test" finished-at="2025-08-08T13:23:43 IST" duration-ms="78076">
+      <class name="runners.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:22:25 IST" name="setUpClass" finished-at="2025-08-08T13:22:26 IST" duration-ms="918" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3c511385]]>
+                <![CDATA[org.testng.TestRunner@5baabba]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:02:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:08 IST" duration-ms="13774" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:22:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:22:41 IST" duration-ms="15307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:15 IST" duration-ms="6939" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:22:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:22:49 IST" duration-ms="7258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:22 IST" duration-ms="6771" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:22:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:22:57 IST" duration-ms="8178" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,7 +86,7 @@ at ✽.validation error for invalid email id should be shown(file:///D:/EclipseP
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:28 IST" duration-ms="6804" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:22:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:23:06 IST" duration-ms="9074" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@ at ✽.validation error for 0 guests should be shown(file:///D:/EclipseProjects/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:35 IST" duration-ms="6634" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:23:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:23:13 IST" duration-ms="7450" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -152,7 +152,7 @@ at ✽.validation error for invalid phone number should be shown(file:///D:/Ecli
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:42 IST" duration-ms="6553" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:23:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:23:21 IST" duration-ms="7302" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -185,7 +185,7 @@ at ✽.validation error for invalid pincode should be shown(file:///D:/EclipsePr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:47 IST" duration-ms="5469" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:23:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:23:27 IST" duration-ms="6151" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,7 +201,7 @@ at ✽.validation error for invalid pincode should be shown(file:///D:/EclipsePr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:03:53 IST" duration-ms="5880" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:23:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:23:33 IST" duration-ms="6425" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -234,7 +234,7 @@ at ✽.message for invalid email should be shown(file:///D:/EclipseProjects/even
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:03:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-05T13:04:02 IST" duration-ms="9506" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:23:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T13:23:43 IST" duration-ms="9767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,94 +250,11 @@ at ✽.message for invalid email should be shown(file:///D:/EclipseProjects/even
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@23348b5d]" started-at="2025-08-05T13:04:02 IST" name="tearDownClass" finished-at="2025-08-05T13:04:03 IST" duration-ms="326" status="FAIL">
-          <exception class="java.lang.reflect.InaccessibleObjectException">
-            <message>
-              <![CDATA[Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not "opens java.lang" to unnamed module @4f47d241]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not "opens java.lang" to unnamed module @4f47d241
-at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
-at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
-at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
-at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
-at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
-at com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessible(UnsafeReflectionAccessor.java:44)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:159)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-at com.google.gson.Gson.getAdapter(Gson.java:458)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-at com.google.gson.Gson.getAdapter(Gson.java:458)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-at com.google.gson.Gson.getAdapter(Gson.java:458)
-at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
-at com.google.gson.Gson.getAdapter(Gson.java:458)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
-at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-at com.google.gson.Gson.getAdapter(Gson.java:458)
-at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:56)
-at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
-at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
-at com.google.gson.Gson.toJson(Gson.java:704)
-at com.google.gson.Gson.toJson(Gson.java:683)
-at com.google.gson.Gson.toJson(Gson.java:658)
-at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
-at com.aventstack.extentreports.reporter.JsonFormatter.access$000(JsonFormatter.java:17)
-at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
-at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
-at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
-at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
-at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
-at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
-at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
-at com.aventstack.extentreports.service.ExtentService.flush(ExtentService.java:47)
-at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:301)
-at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:63)
-at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:137)
-at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:134)
-at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:118)
-at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:105)
-at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
-at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.reflect.InaccessibleObjectException -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestNGRunner@305b7c14]" started-at="2025-08-08T13:23:43 IST" name="tearDownClass" finished-at="2025-08-08T13:23:43 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.TestRunner -->
+      </class> <!-- runners.TestNGRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

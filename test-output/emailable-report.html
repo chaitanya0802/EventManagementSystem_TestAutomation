@@ -9,107 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">69,487</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">78,076</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">runners.TestRunner</td><td><a href="#m0">tearDownClass</a></td><td rowspan="1">1754379242879</td><td rowspan="1">326</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">runners.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="5">1754379208825</td><td rowspan="5">6634</td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">runners.TestRunner</td><td><a href="#m6">runScenario</a></td><td rowspan="4">1754379188305</td><td rowspan="4">6939</td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m8">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m9">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">runners.TestNGRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="5">1754639569237</td><td rowspan="5">8178</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">runners.TestNGRunner</td><td><a href="#m5">runScenario</a></td><td rowspan="4">1754639546666</td><td rowspan="4">15307</td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m8">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">runners.TestRunner#tearDownClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @4f47d241
-	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
-	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
-	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
-	at com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessible(UnsafeReflectionAccessor.java:44)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:159)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-	at com.google.gson.Gson.getAdapter(Gson.java:458)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-	at com.google.gson.Gson.getAdapter(Gson.java:458)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-	at com.google.gson.Gson.getAdapter(Gson.java:458)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
-	at com.google.gson.Gson.getAdapter(Gson.java:458)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
-	at com.google.gson.Gson.getAdapter(Gson.java:458)
-	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:56)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
-	at com.google.gson.Gson.toJson(Gson.java:704)
-	at com.google.gson.Gson.toJson(Gson.java:683)
-	at com.google.gson.Gson.toJson(Gson.java:658)
-	at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
-	at com.aventstack.extentreports.reporter.JsonFormatter.access$000(JsonFormatter.java:17)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
-	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
-	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
-	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
-	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
-	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
-	at com.aventstack.extentreports.service.ExtentService.flush(ExtentService.java:47)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:301)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:63)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:137)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:134)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:105)
-	at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with invalid phone number&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Phone Number] but found []
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepDefinations.BookingTest.validation_error_for_invalid_phone_number_should_be_shown(BookingTest.java:124)
-	at ✽.validation error for invalid phone number should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:35)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with zero guests&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Guests Cannot be Zero] but found []
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepDefinations.BookingTest.validation_error_for_guests_should_be_shown(BookingTest.java:110)
-	at ✽.validation error for 0 guests should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:29)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with invalid email&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Email Id] but found []
+<h2>Default test</h2><h3 id="m0">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with invalid email&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Email Id] but found []
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -119,7 +23,17 @@
 	at stepDefinations.BookingTest.validation_error_for_invalid_email_id_should_be_shown(BookingTest.java:95)
 	at ✽.validation error for invalid email id should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:23)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with invalid pincode&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Pincode] but found []
+<h3 id="m1">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with zero guests&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Guests Cannot be Zero] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_guests_should_be_shown(BookingTest.java:110)
+	at ✽.validation error for 0 guests should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:29)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with invalid pincode&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Pincode] but found []
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -129,7 +43,17 @@
 	at stepDefinations.BookingTest.validation_error_for_invalid_pincode_should_be_shown(BookingTest.java:138)
 	at ✽.validation error for invalid pincode should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:41)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit Contact Us form with invalid email&quot;</td><td>&quot;Contact Us Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Email] but found []
+<h3 id="m3">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with invalid phone number&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Phone Number] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.BookingTest.validation_error_for_invalid_phone_number_should_be_shown(BookingTest.java:124)
+	at ✽.validation error for invalid phone number should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/booking.feature:35)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit Contact Us form with invalid email&quot;</td><td>&quot;Contact Us Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Invalid Email] but found []
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -139,9 +63,9 @@
 	at stepDefinations.ContactTest.message_for_invalid_email_should_be_shown(ContactTest.java:58)
 	at ✽.message for invalid email should be shown(file:///D:/EclipseProjects/event-management-system/src/test/resources/features/contact.feature:17)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with missing first name&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit Contact Us form with empty name&quot;</td><td>&quot;Contact Us Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Book the event with all valid details&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Get status if message is sent successfully&quot;</td><td>&quot;Contact Us Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Book the event with all valid details&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Get status if message is sent successfully&quot;</td><td>&quot;Contact Us Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit Contact Us form with empty name&quot;</td><td>&quot;Contact Us Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">runners.TestNGRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Submit booking form with missing first name&quot;</td><td>&quot;Event Booking Functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

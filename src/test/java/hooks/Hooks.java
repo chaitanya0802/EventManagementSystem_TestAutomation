@@ -39,9 +39,9 @@ public class Hooks {
                 String path = ScreenshotUtils.captureScreenshot(driver, scenario.getName());
                 scenario.attach(ScreenshotUtils.captureScreenshotBytes(driver), "image/png", scenario.getName());
 
-                //for extentreport
+                //for extentreport screenshot path
                 ExtentReportManager.getTest().fail("Screenshot for failure:",
-                    MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+                        MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 
                 logger.info("Screenshot attached for failed scenario: " + path);
             } catch (Exception e) {
