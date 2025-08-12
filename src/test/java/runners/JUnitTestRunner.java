@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
     tags = "@booking or @contact",
 	plugin = {
 		    "pretty",
-		    "html:target/cucumber-reports/cucumber.html",
-		    "json:target/cucumber-reports/cucumber.json",
+		    "html:target/cucumber-report/cucumber.html",
+		    "json:target/cucumber-report/cucumber.json",
 		    "rerun:target/rerun.txt",
 		    "plugins.CucumberExtentReportPlugin",
 		    "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"

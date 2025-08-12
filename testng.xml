@@ -2,7 +2,7 @@
 <suite name="SeleniumSuite" parallel="false">
   <test name="LoginTest">
     <classes>
-    	<class name="runners.TestRunner"/>
+    	<class name="runners.TestNGRunner"/>
     </classes>
   </test>
 </suite>
