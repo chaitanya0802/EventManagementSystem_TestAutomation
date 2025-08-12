@@ -12516,3 +12516,6 @@ java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.Exte
 2025-08-08 15:00:07 [main] INFO  utils.ReusableFunctions - Element is clickable: [[ChromeDriver: chrome on windows (7f61e8e90c224d8964f2d38da433b535)] -> id: message]
 2025-08-08 15:00:07 [main] INFO  utils.ReusableFunctions - Clicked element: [[ChromeDriver: chrome on windows (7f61e8e90c224d8964f2d38da433b535)] -> id: message]
 2025-08-08 15:00:11 [main] INFO  utils.ReusableFunctions - Got text 'Your message has been sent !' from element: [[ChromeDriver: chrome on windows (7f61e8e90c224d8964f2d38da433b535)] -> id: mesgtab]
+2025-08-12 11:39:09 [main] INFO  drivers.DriverFactory - Launching browser: chrome
+2025-08-12 11:39:12 [main] INFO  drivers.DriverFactory - Chrome browser launched
+2025-08-12 11:39:12 [main] INFO  drivers.DriverFactory - Browser window maximized and implicit wait set to 1 seconds

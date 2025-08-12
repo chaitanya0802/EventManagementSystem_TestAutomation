@@ -1,2 +1,0 @@
-file:src/test/resources/features/contact.feature:14
-file:src/test/resources/features/booking.feature:20:26:32:38

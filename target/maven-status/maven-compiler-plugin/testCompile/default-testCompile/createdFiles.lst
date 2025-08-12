@@ -1,6 +1,0 @@
-stepDefinations\BookingTest.class
-stepDefinations\ContactTest.class
-plugins\CucumberExtentReportPlugin.class
-runners\JUnitTestRunner.class
-runners\TestNGRunner.class
-hooks\Hooks.class
