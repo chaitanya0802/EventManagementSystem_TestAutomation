@@ -1,35 +1,30 @@
 pipeline {
     agent any
-
+ 
     tools {
         maven 'maven 3.9.11'  // Name as configured in Jenkins
-        jdk 'jdk-21'        // Name as configured in Jenkins
+        jdk 'jdk-21'     // Name of JDK configured in Jenkins
     }
-
+ 
     environment {
-        MAVEN_OPTS = "-Dmaven.test.failure.ignore=false"
+        GIT_REPO = 'https://github.com/chaitanya0802/EventManagementSystem_TestAutomation.git'
+        BRANCH = 'main'
+        REPORT_PATH = 'target/surefire-reports'
     }
-
+ 
     stages {
-
-        stage('Checkout') {
+        stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/chaitanya0802/EventManagementSystem_TestAutomation.git'
+                git branch: "${BRANCH}", url: "${GIT_REPO}"
             }
         }
-
-        stage('Build') {
+ 
+        stage('Build & Run Tests') {
             steps {
-                sh 'mvn clean compile'
+               bat 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
-
-        stage('Run Tests') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-
+ 
         stage('Publish Reports') {
             steps {
                 // Publish Extent report
@@ -54,13 +49,18 @@ pipeline {
             }
             
         }
-            
     }
-
+ 
     post {
         always {
-            junit 'target/surefire-reports/*.xml'
-            cucumber fileIncludePattern: 'target/cucumber.json'
+            echo 'Cleaning workspace...'
+            cleanWs()
+        }
+        success {
+            echo 'Build completed successfully!'
+        }
+        failure {
+            echo 'Build failed. Please check logs.'
         }
     }
 }
