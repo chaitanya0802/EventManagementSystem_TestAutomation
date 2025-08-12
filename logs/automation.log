@@ -12519,3 +12519,7 @@ java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.Exte
 2025-08-12 11:39:09 [main] INFO  drivers.DriverFactory - Launching browser: chrome
 2025-08-12 11:39:12 [main] INFO  drivers.DriverFactory - Chrome browser launched
 2025-08-12 11:39:12 [main] INFO  drivers.DriverFactory - Browser window maximized and implicit wait set to 1 seconds
+2025-08-12 11:50:18 [main] INFO  drivers.DriverFactory - Launching browser: chrome
+2025-08-12 11:50:21 [main] INFO  drivers.DriverFactory - Chrome browser launched
+2025-08-12 11:50:21 [main] INFO  drivers.DriverFactory - Browser window maximized and implicit wait set to 1 seconds
+2025-08-12 11:50:23 [main] INFO  utils.ReusableFunctions - Opened URL: http://webapps.tekstac.com/SeleniumApp1/EventManagement/index.html
