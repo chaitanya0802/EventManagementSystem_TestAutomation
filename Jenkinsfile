@@ -23,7 +23,7 @@ pipeline {
             steps {
                bat 'mvn clean test -DsuiteXmlFile=testng.xml || exit 0'
             }
-        
+        }
  
         stage('Publish Reports') {
             steps {
