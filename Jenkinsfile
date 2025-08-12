@@ -23,7 +23,7 @@ pipeline {
             steps {
                bat 'mvn clean test -DsuiteXmlFile=testng.xml || exit 0'
             }
-        }
+        
  
         stage('Publish Reports') {
             steps {
@@ -52,10 +52,6 @@ pipeline {
     }
  
     post {
-        always {
-            echo 'Cleaning workspace...'
-            deleteDir()
-        }
         success {
             echo 'Build completed successfully!'
         }
