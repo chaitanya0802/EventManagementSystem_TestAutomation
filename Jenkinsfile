@@ -52,10 +52,6 @@ pipeline {
     }
  
     post {
-        always {
-            echo 'Cleaning workspace...'
-            cleanWs()
-        }
         success {
             echo 'Build completed successfully!'
         }
