@@ -2,8 +2,8 @@ pipeline {
     agent any
  
     tools {
-        maven 'maven 3.9.11'  // Name as configured in Jenkins
-        jdk 'jdk-21'     // Name of JDK configured in Jenkins
+        maven 'maven 3.9.11'  
+        jdk 'jdk-21'   
     }
  
     environment {
@@ -27,21 +27,21 @@ pipeline {
  
         stage('Publish Reports') {
             steps {
-                // Publish Extent report
+		//extent reports
                 publishHTML(target: [
                     reportName: 'Extent Report',
-                    reportDir: 'target/extent-report',  // change if your folder is different
-                    reportFiles: 'ExtentReport.html',          // change file name if different
+                    reportDir: 'target/extent-report',  
+                    reportFiles: 'ExtentReport.html',          
                     keepAll: true,
                     alwaysLinkToLastBuild: true,
                     allowMissing: false
                 ])
 
-                // Publish Cucumber report
+                //cucumbr report
                 publishHTML(target: [
                     reportName: 'Cucumber Report',
-                    reportDir: 'target/cucumber-reports', // folder containing cucumber HTML
-                    reportFiles: 'cucumber.html',           // cucumber html report file name
+                    reportDir: 'target/cucumber-reports', 
+                    reportFiles: 'cucumber.html',           
                     keepAll: true,
                     alwaysLinkToLastBuild: true,
                     allowMissing: true
